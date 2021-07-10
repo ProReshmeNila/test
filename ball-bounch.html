@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        @keyframes tik-tok {
+            0%{
+                background-color: yellowgreen;
+                left: 0;
+                top: 0;
+            }
+            50%{
+                background: purple;
+                top: 320px;
+            }
+            100%{
+                top: 0;
+                left: 520px;
+                background: red;
+            }
+        }
+        .stage{
+            width: 600px;
+            height: 400px;
+            background: rgba(250, 128, 114, 0.664);
+        }
+        .ball{
+            position: relative;
+            width: 80px;
+            height: 80px;
+            border-radius: 100%;
+            background-color: aqua;
+            animation: tik-tok 2s ease-in-out  infinite alternate ;
+            animation-play-state: running;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is bounce ball</h1>
+    <div class="stage">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>
